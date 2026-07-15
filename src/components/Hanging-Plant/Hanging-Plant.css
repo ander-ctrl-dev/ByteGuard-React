@@ -1,0 +1,151 @@
+.plant{
+
+    position:absolute;
+
+    left:400px;   
+    top:285px;
+    width:40px;
+    height:40px;
+
+    z-index: 10;
+
+    overflow:visible;
+    transform: translateY(4px);
+}
+.pot{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:36px;
+
+    height:26px;
+
+    background:#a8682d;
+
+    border-radius:0 0 10px 10px;
+}
+.pot::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:2px;
+    left:2px;
+
+    width:28px;
+    height:6px;
+
+    background:#4b3326;
+
+    border-radius:50%;
+}
+.vine{
+
+    position:absolute;
+    top: 8px;
+    width:4px;
+
+    background: transparent;
+
+    border-radius: 40px;
+    border-left: 4px solid #3f7d48;;
+
+    transform-origin:top center;
+}
+.vine::before {
+    content: "";
+    position: absolute;
+
+    width: 8px;
+    height: 12px;
+
+    background: #59b56a;
+
+    border-radius: 50% 50% 50% 0;
+
+    left: -4px;
+    top: 18px;
+
+    transform: rotate(-35deg);
+}
+
+.v1::before{
+    left: -6px;
+    top: 12px;
+    transform: rotate(-40deg);
+}
+.v2::before{
+    left: 3px;
+    top: 28px;
+    transform: rotate(18deg);
+}
+.v3::before{
+    left: -5px;
+    top: 46px;
+    transform: rotate(-25deg);
+}
+
+.v1{
+
+    left:6px;
+    height:95px;
+    top: 16px;
+    z-index: 15;
+
+    transform:rotate(10deg);
+    animation: sway 6s ease-in-out infinite;
+
+}
+.v2{
+
+    left:15px;
+    height:100px;
+    top: 16px;
+
+    transform:rotate(2deg);
+    animation: sway 7s ease-in-out infinite;
+
+}
+.v3{
+
+    left:24px;
+    height:105px;
+    top: 16px;
+
+    transform:rotate(-8deg);
+    animation: sway 5s ease-in-out infinite;
+}
+
+.v1::after{
+    left: 4px;
+    top: 22px;
+    transform: rotate(35deg);
+}
+.v2::after{
+    left: -8px;
+    top: 42px;
+    transform: rotate(-15deg);
+}
+.v3::after{
+    left: 6px;
+    top: 58px;
+    transform: rotate(30deg);
+}
+
+@keyframes sway {
+
+    0% {
+        transform: rotate(8deg);
+    }
+
+    50% {
+        transform: rotate(12deg);
+    }
+
+    100% {
+        transform: rotate(8deg);
+    }
+}

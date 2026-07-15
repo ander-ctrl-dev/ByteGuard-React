@@ -1,0 +1,34 @@
+.table{
+    width:210px;
+    height:90px;
+    left:570px;
+    bottom: -450px;
+
+    background:#8f6543;
+    position: absolute;
+
+    border-radius:12px;
+
+    position:relative;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.25);
+}
+.table::before,
+.table::after{
+    content:"";
+    position:absolute;
+
+    width:10px;
+    height:55px;
+
+    background:#6d492d;
+
+    bottom:-55px;
+}
+.table::before{
+    left:18px;
+}
+.table::after{
+    right:18px;
+}

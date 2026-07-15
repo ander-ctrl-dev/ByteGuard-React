@@ -1,0 +1,91 @@
+.coffee-mug{
+    position:absolute;
+
+    bottom:70px;
+    right:150px;
+
+    width:26px;
+    height:24px;
+
+    background:#f7f0dc;
+
+    border-radius:4px 4px 8px 8px;
+
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+.coffee-mug::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-6px;
+    top:6px;
+
+    width:8px;
+    height:10px;
+
+    border:2px solid #f7f0dc;
+    border-left:none;
+
+    border-radius:50%;
+}
+.steam{
+
+    position:absolute;
+
+    width:4px;
+    height:14px;
+
+    background:rgba(255,255,255,.6);
+
+    border-radius:50%;
+
+    animation:steam 2s infinite ease-in-out;
+}
+.steam1{
+
+    left:4px;
+    top:-12px;
+}
+.steam2{
+
+    left:10px;
+    top:-16px;
+
+    animation-delay:.5s;
+}
+.steam3{
+
+    left:16px;
+    top:-12px;
+
+    animation-delay:1s;
+}
+@keyframes steam{
+
+    0%{
+        opacity:0;
+        transform:translateY(6px);
+    }
+
+    50%{
+        opacity:.8;
+    }
+
+    100%{
+        opacity:0;
+        transform:translateY(-10px);
+    }
+}
+.mug-label {
+    color: black;
+    
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

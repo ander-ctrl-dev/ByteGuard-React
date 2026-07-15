@@ -1,0 +1,27 @@
+.notebook{
+
+    position:absolute;
+
+    right:18px;
+    top:12px;
+
+    width:42px;
+    height:32px;
+
+    background:#efe3b4;
+
+    border-radius:3px;
+
+    transform:rotate(-8deg);
+
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+.notebook-line{
+
+    width:28px;
+    height:2px;
+
+    background:#d5c48b;
+
+    margin:6px auto;
+}

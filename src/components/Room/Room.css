@@ -1,0 +1,72 @@
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #111827;
+}
+.room::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(255,150,90,.06),
+            transparent 65%
+        );
+
+    pointer-events:none;
+}
+.room {
+
+    width: 1300px;
+    position: relative;
+    height: 650px;
+
+    border-radius: 40px;
+    backdrop-filter: blur(12px);
+
+    background:
+        repeating-linear-gradient(
+            90deg,
+            rgba(255,255,255,.02) 0px,
+            rgba(255,255,255,.02) 2px,
+            transparent 2px,
+            transparent 22px
+        ),
+        linear-gradient(
+            to bottom,
+            #0d2346,
+            #09172e
+        );
+
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.wall{
+    background:
+        linear-gradient(
+            rgba(255,255,255,.02),
+            rgba(255,255,255,.005)
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(255,255,255,.025) 0px,
+            rgba(255,255,255,.025) 2px,
+            transparent 2px,
+            transparent 22px
+        ),
+        linear-gradient(
+            #123d72,
+            #0b2750
+        );
+}

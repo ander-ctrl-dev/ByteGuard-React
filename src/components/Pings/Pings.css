@@ -1,0 +1,153 @@
+.pings{
+    position:absolute;
+
+    left:20px;
+    bottom:20px;
+
+    width:120px;
+    height:180px;
+    z-index: 1;
+
+    animation: float 3s ease-in-out infinite;
+}
+.pings .head{
+    position:relative;
+
+    width:72px;
+    height:58px;
+
+    left: 280px;
+    top: -70px;
+
+    background: #838996;
+
+    border-radius:18px;
+    outline: 1px solid black;
+    box-shadow:
+        inset 0 2px 4px rgba(255,255,255,.5),
+        0 4px 10px rgba(0,0,0,.15);
+}
+.pings .screen{
+    position:absolute;
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;
+
+    width:48px;
+    height:34px;
+    left:12px;
+    top:12px;
+
+    background:#2a3558;
+
+    border-radius:10px;
+    overflow:hidden;
+}
+.eye-left, .eye-right{
+    position:relative;
+    
+    width:8px;
+    height:18px;
+    
+    background:#d7ffff;
+    border-radius:20px;
+    box-shadow:0 0 10px cyan;
+
+    animation:blink 4s infinite;
+}
+.antenna{
+    position:absolute;
+    width:4px;
+    height:16px;
+    
+    right: 34px;
+    top: -16px;
+
+    background:#838996;
+    outline: 1px solid black;
+}
+.antenna-top{
+    position:relative;
+    width:8px;
+    height:8px;
+
+    right: 2px;
+    top: -8px;
+
+    background:#d7ffff;
+    box-shadow:0 0 10px cyan;
+    outline: 1px solid black;
+    border-radius:60%;
+
+    animation:pulse 4s infinite;
+}
+@keyframes pulse{
+
+0%,100%{
+box-shadow:0 0 6px cyan;
+}
+
+50%{
+box-shadow:0 0 16px cyan;
+}
+
+}
+@keyframes blink{
+
+    0%,92%,100%{
+        transform:scaleY(1);
+    }
+
+    94%,96%{
+        transform:scaleY(.08);
+}
+}
+.body {
+    position:absolute;
+    width:85px;
+    height:100px;
+
+    left: 274px;
+    bottom: 85px;
+    
+    background:#838996;
+    border-radius: 18px;
+    outline: 1px solid black;
+
+    display: block;
+}
+.neck {
+    position: relative;
+    background: #838996;
+    
+    width: 36px;
+    height: 8px;
+    bottom: 8px;
+
+    left: 25px;
+    
+    border-radius: 18px;
+    outline: 1px solid black;
+}
+@keyframes float{
+
+0%,100%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-6px);
+}
+
+}
+.arm-left, .arm-right {
+    position: relative;
+    background: #838996;
+
+    width: 20px;
+    height: 40px;
+
+    border-radius: 18px;
+}

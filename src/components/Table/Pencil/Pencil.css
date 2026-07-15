@@ -1,0 +1,28 @@
+.pencil{
+
+    position:absolute;
+
+    left:120px;
+    top:36px;
+
+    width:36px;
+    height:4px;
+
+    background:#e6c64d;
+
+    transform:rotate(-24deg);
+
+    border-radius:3px;
+}
+.pencil::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-4px;
+
+    border-left:5px solid #8b5a2b;
+    border-top:2px solid transparent;
+    border-bottom:2px solid transparent;
+}
