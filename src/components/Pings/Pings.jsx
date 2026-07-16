@@ -3,25 +3,22 @@ import "./Pings.css";
 function Pings() {
     return (
         <div className="pings"> 
-            <div className="head">
-                
+            <div className="head">              
                 <div className="screen">
                     <div className="eye-left"></div>
                     <div className="eye-right"></div>
                 </div> {/* screen ending */}
+            <div className="ear-left"></div>
+            <div className="ear-right"></div>
+            <div className="antenna-left">
+                <div className="antenna-tip"></div>
+            </div>
+            <div className="antenna-right">
+                <div className="antenna-tip"></div>
+            </div>
+                </div> {/* head ending */}
                 
-                <div className="antenna">
-                    <div className="antenna-top">
-                </div>
-                </div> {/* antenna ending */}
-        
-            </div> {/* head ending */}
-        
-            <div className="body">
-                <div className="neck"></div>
-                <div className="arm-left"></div>
-                <div className="arm-right"></div>
-            </div> {/* body ending */}
+                
         
 
         

@@ -1,8 +1,8 @@
 .pings{
-    position:absolute;
+    position:relative;
 
-    left:20px;
-    bottom:20px;
+    left:-10px;
+    top: 350px;
 
     width:120px;
     height:180px;
@@ -11,21 +11,30 @@
     animation: float 3s ease-in-out infinite;
 }
 .pings .head{
-    position:relative;
+    position:absolute;
+    z-index: 2;
 
-    width:72px;
-    height:58px;
+    width:100px;
+    height:80px;
 
     left: 280px;
     top: -70px;
 
     background: #838996;
 
-    border-radius:18px;
+    border-radius:35px;
     outline: 1px solid black;
     box-shadow:
         inset 0 2px 4px rgba(255,255,255,.5),
         0 4px 10px rgba(0,0,0,.15);
+}
+.head:hover {
+    transform: rotate(-4deg);
+    transition: transform .2s ease;
+}
+.screen:hover {
+    box-shadow: 0 0 20px #6ffcff;
+    transition: box-shadow .2s ease;
 }
 .pings .screen{
     position:absolute;
@@ -35,14 +44,14 @@
     align-items:center;
     gap: 10px;
 
-    width:48px;
-    height:34px;
-    left:12px;
-    top:12px;
+    width:85px;
+    height:55px;
+    left:7px;
+    top:14px;
 
     background:#2a3558;
 
-    border-radius:10px;
+    border-radius:18px;
     overflow:hidden;
 }
 .eye-left, .eye-right{
@@ -57,32 +66,54 @@
 
     animation:blink 4s infinite;
 }
-.antenna{
-    position:absolute;
-    width:4px;
-    height:16px;
-    
-    right: 34px;
-    top: -16px;
-
-    background:#838996;
+.ear-left, .ear-right {
+    position: absolute;
+    z-index: 0;
+    width: 13px;
+    height: 45px;
+    background: #838996;
     outline: 1px solid black;
 }
-.antenna-top{
-    position:relative;
-    width:8px;
-    height:8px;
+.ear-left {
+    left: -10px;
+    top: 15px;
+    border-top-left-radius: -10px;
+    border-bottom-left-radius: 18px;  
+}
+.ear-right {
+    right: -11px;
+    top: 15px;
+    border-top-right-radius: -10px;
+    border-bottom-right-radius: 18px;
+}
+.antenna-left,
+.antenna-right {
+    position: relative;
+    width: 2px;
+    height: 20px;
+    background: #cfd7df;
+}
 
-    right: 2px;
-    top: -8px;
+.antenna-right {
+    left: 100px;
+    top: 0px;
+}
 
-    background:#d7ffff;
+.antenna-left {
+    right: 12px;
+}
+
+.antenna-tip {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #d7ffff;
+    top: -5px;
+    left: -3px;
     box-shadow:0 0 10px cyan;
-    outline: 1px solid black;
-    border-radius:60%;
-
-    animation:pulse 4s infinite;
 }
+
 @keyframes pulse{
 
 0%,100%{
@@ -104,33 +135,6 @@ box-shadow:0 0 16px cyan;
         transform:scaleY(.08);
 }
 }
-.body {
-    position:absolute;
-    width:85px;
-    height:100px;
-
-    left: 274px;
-    bottom: 85px;
-    
-    background:#838996;
-    border-radius: 18px;
-    outline: 1px solid black;
-
-    display: block;
-}
-.neck {
-    position: relative;
-    background: #838996;
-    
-    width: 36px;
-    height: 8px;
-    bottom: 8px;
-
-    left: 25px;
-    
-    border-radius: 18px;
-    outline: 1px solid black;
-}
 @keyframes float{
 
 0%,100%{
@@ -141,13 +145,4 @@ transform:translateY(0px);
 transform:translateY(-6px);
 }
 
-}
-.arm-left, .arm-right {
-    position: relative;
-    background: #838996;
-
-    width: 20px;
-    height: 40px;
-
-    border-radius: 18px;
 }
