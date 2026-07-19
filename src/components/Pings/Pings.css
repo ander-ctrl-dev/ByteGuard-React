@@ -14,8 +14,8 @@
     position:absolute;
     z-index: 2;
 
-    width:100px;
-    height:80px;
+    width:70px;
+    height:60px;
 
     left: 280px;
     top: -70px;
@@ -28,13 +28,20 @@
         inset 0 2px 4px rgba(255,255,255,.5),
         0 4px 10px rgba(0,0,0,.15);
 }
-.head:hover {
-    transform: rotate(-4deg);
-    transition: transform .2s ease;
+.neck {
+    position: absolute;
+    width: 15px;
+    height: 5px;
+    background: #838996;
+    outline: 1px solid black;
+
+    top: 60px;
+    right: 27px;
 }
 .screen:hover {
     box-shadow: 0 0 20px #6ffcff;
     transition: box-shadow .2s ease;
+    transform: rotate(-4deg);
 }
 .pings .screen{
     position:absolute;
@@ -44,8 +51,8 @@
     align-items:center;
     gap: 10px;
 
-    width:85px;
-    height:55px;
+    width:55px;
+    height:35px;
     left:7px;
     top:14px;
 
@@ -58,7 +65,7 @@
     position:relative;
     
     width:8px;
-    height:18px;
+    height:15px;
     
     background:#d7ffff;
     border-radius:20px;
@@ -69,8 +76,8 @@
 .ear-left, .ear-right {
     position: absolute;
     z-index: 0;
-    width: 13px;
-    height: 45px;
+    width: 10px;
+    height: 25px;
     background: #838996;
     outline: 1px solid black;
 }
@@ -86,23 +93,22 @@
     border-top-right-radius: -10px;
     border-bottom-right-radius: 18px;
 }
+
 .antenna-left,
 .antenna-right {
     position: relative;
     width: 2px;
     height: 20px;
     background: #cfd7df;
+    z-index: -1;
 }
-
 .antenna-right {
-    left: 100px;
-    top: 0px;
+    left: 75px;
+    bottom: 20px;
 }
-
 .antenna-left {
-    right: 12px;
+    right: 5px;
 }
-
 .antenna-tip {
     position: absolute;
     width: 8px;
@@ -114,6 +120,93 @@
     box-shadow:0 0 10px cyan;
 }
 
+.chest {
+    position: absolute;
+    width: 85px;
+    height: 40px;
+    left:-8px;
+    background: #838996;
+    outline: 1px solid black;
+    
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 1;
+
+    top: 65px;
+}
+.chest-plate {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background: #838996;
+    outline: 1px solid black;
+    right: 22px;
+
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+.chest-plate p {
+    position: relative;
+    font-size:10px;
+    color: black;
+    left: 7px;
+    top: 4px;
+}
+.belly {
+    position:absolute;
+    width: 25px;
+    height: 40px;
+    background: #838996;
+    outline: 1px solid black;
+
+    top: 95px;
+    left: 24px;
+    border-radius: 18px;
+    z-index: 2;
+}
+.hips {
+    position: absolute;
+    width: 85px;
+    height: 40px;
+    left:-8px;
+    background: #838996;
+    outline: 1px solid black;
+
+    top: 115px;
+
+    border-radius: 30% 30% 30% 30%;
+}
+
+.right-arm-socket {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    
+    background: #838996;
+    outline: 1px solid black;
+    border-radius: 18px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 18px;
+    
+    left: 70px;
+    top: 68px;
+    z-index: -1;
+}
+.left-arm-socket {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    
+    background: #838996;
+    outline: 1px solid black;
+    border-radius: 18px;
+    
+    right: 72px;
+    top: 68px;
+    z-index: -1;
+}
 @keyframes pulse{
 
 0%,100%{
