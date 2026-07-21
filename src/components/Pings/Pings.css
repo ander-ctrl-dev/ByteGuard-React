@@ -166,6 +166,7 @@
     border-radius: 18px;
     z-index: 2;
 }
+
 .hips {
     position: absolute;
     width: 85px;
@@ -174,39 +175,158 @@
     background: #838996;
     outline: 1px solid black;
 
-    top: 115px;
+    top: 110px;
 
     border-radius: 30% 30% 30% 30%;
 }
+.left-leg {
+    position: absolute;
+    width: 15px;
+    height: 40px;
+    background: #838996;
+    top: 30px;
+    left: 10px;
+    outline: 1px solid black;
+    z-index: 3;
+    border-radius: 2px;
+}
+.right-leg {
+    position: absolute;
+    width: 15px;
+    height: 40px;
+    background: #838996;
+    top: 30px;
+    right: 10px;
+    outline: 1px solid black;
+    z-index: 3;
+    border-radius: 2px;
+}
+.left-ankle {
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    background: #838996;
+    top: 30px;
+    left: -6px;
+    outline: 1px solid black;
+    z-index: 3;
+    border-radius: 2px;
+}
+.right-ankle {
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    background: #838996;
+    top: 30px;
+    right: -6px;
+    outline: 1px solid black;
+    z-index: 3;
+    border-radius: 2px;
+}
+.left-foot {
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    background: #838996;
+    top: 30px;
+    right: -5px;
+    outline: 1px solid black;
+    border-radius: 25%;
+}
+.right-foot {
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    background: #838996;
+    top: 30px;
+    right: -5px;
+    outline: 1px solid black;
+    border-radius: 25%;
+}
+.left-arm {
+    position: absolute;
+    width: 9px;
+    height: 20px;
+    background: #838996;
+    bottom: 1px;
+    right: 91px;
+    outline: 1px solid black;
+    z-index: -2;
+    border-radius: 2px;
+}
+.right-arm {
+    position: absolute;
+    width: 9px;
+    height: 20px;
+    background: #838996;
+    bottom: 1px;
+    left: 91px;
+    outline: 1px solid black;
+    z-index: 1;
+    border-radius: 2px;
+}
+.left-forearm {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background: #838996;
+    top: 35px;
+    left: 86px;
+    outline: 1px solid black;
+    z-index: 4;
+    border-radius: 3px;
+}
+.right-forearm {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background: #838996;
+    top: 35px;
+    right: 87px;
+    outline: 1px solid black;
+    z-index: 4;
+    border-radius: 3px;
+}
+.left-hand {
+    position: relative;
+    width: 20x;
+    height: 18px;
+    background: #838996;
+    z-index: -2;
+    border-radius: 12px;
+    top: 38px;
+    left:0px;
+}
+.right-hand {
+    position: relative;
+    width: 20x;
+    height: 18px;
+    background: #838996;
+    z-index: -2;
+    border-radius: 12px;
+    top: 38px;
+    right:0px;    
+}
+.shoulder-1, .shoulder-2 {
+    position: relative;
+    width: 24px;
+    height: 18px;
+    background: #838996;
+    z-index: -1;
+    border-radius: 12px;
+    clip-path: inset(0 0 10% 0);
+}
+.shoulder-1 {
+    top: 27px;
+    left: 75px;
+}
+.shoulder-2 {
+    top: 10px;
+    right: 30px;
+}
 
-.right-arm-socket {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    
-    background: #838996;
-    outline: 1px solid black;
-    border-radius: 18px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 18px;
-    
-    left: 70px;
-    top: 68px;
-    z-index: -1;
-}
-.left-arm-socket {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    
-    background: #838996;
-    outline: 1px solid black;
-    border-radius: 18px;
-    
-    right: 72px;
-    top: 68px;
-    z-index: -1;
-}
+
+
 @keyframes pulse{
 
 0%,100%{

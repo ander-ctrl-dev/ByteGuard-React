@@ -18,15 +18,34 @@ function Pings() {
                 <div className="antenna-tip"></div>
             </div>  
             <div className="chest">
+                <div className="left-arm"></div>
+                    <div className="right-arm"></div>
+                    <div className="left-forearm">
+                        <div className="left-hand"></div>
+                    </div>
+                    <div className="right-forearm">
+                        <div className="right-hand"></div>
+                    </div>
                 <div className="chest-plate">
                     <p>B-001
                         </p>
                     </div>
             </div> {/* chest ending*/}
-                <div className="left-arm-socket"></div>
-                <div className="right-arm-socket"></div>
+                <div className="shoulder-1"></div>
+                <div className="shoulder-2"></div>
                 <div className="belly"></div>
-                <div className="hips"></div>
+                <div className="hips">
+                    <div className="left-leg">
+                        <div className="left-ankle">
+                            <div className="left-foot"></div>
+                        </div>
+                    </div>
+                    <div className="right-leg">
+                        <div className="right-ankle">
+                            <div className="right-foot"></div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
     );
