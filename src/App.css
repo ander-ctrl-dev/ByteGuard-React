@@ -182,3 +182,26 @@
     border-right-color: var(--border);
   }
 }
+
+.viewport {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+
+@media (max-width:768px){
+
+    .viewport{
+      overflow: auto;
+        justify-content:flex-start;
+        align-items:flex-start;
+        padding:20px;
+    }
+
+}
+

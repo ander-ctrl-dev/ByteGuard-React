@@ -12,7 +12,8 @@
     z-index:-1;
 }
 .window-frame{
-    position:absolute;    
+    position:absolute; 
+    transform-origin: yop-left;   
     top:56px;
     left:70px;
 
@@ -159,5 +160,10 @@
     50%{
         opacity:1;
         transform:scale(1.3);
+    }
+}
+@media (max-width:768px) {
+    .window-frame{
+        transform:scale(.72);
     }
 }

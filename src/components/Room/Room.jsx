@@ -2,9 +2,9 @@ import "./Room.css";
 
 function Room({ children }) {
     return (
-    <div className="room">
-        {children}
-    </div>
+            <div className="room">
+                {children}
+        </div>
     );
 }
 

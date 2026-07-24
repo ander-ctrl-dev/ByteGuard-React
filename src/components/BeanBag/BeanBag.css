@@ -31,3 +31,11 @@
     right: 370px;
     bottom: 80px;
 }
+@media (max-width: 768px) {
+    .beanbag-left {
+        left: 20px;
+    }
+    .beanbag-right {
+        right: 20px;
+    }
+}

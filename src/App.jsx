@@ -9,6 +9,7 @@ import Pings from "./components/Pings/Pings";
 
 function App() {
     return (
+        <div className="viewport">
         <Room>
             <Floor />
             <Window />
@@ -19,6 +20,7 @@ function App() {
             <BeanBag side="left" />
             <BeanBag side="right" />
         </Room>
+    </div>    
     );
 }
 

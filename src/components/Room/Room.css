@@ -1,14 +1,8 @@
-
 body {
-    height: 100vh;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
-
+    overflow: auto;
     background: #111827;
 }
 .room::before{
@@ -26,7 +20,6 @@ body {
     pointer-events:none;
 }
 .room {
-
     width: 1300px;
     position: relative;
     height: 650px;
@@ -49,7 +42,6 @@ body {
         );
 
     border: 2px solid black;
-    position: relative;
     overflow: hidden;
 }
 .wall{
@@ -70,3 +62,9 @@ body {
             #0b2750
         );
 }
+@media (max-width: 768px) {
+    .room {
+        transform: scale(.6)
+    }
+}
+

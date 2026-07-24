@@ -1,16 +1,14 @@
 .table{
     width:210px;
     height:90px;
-    left:570px;
-    bottom: -450px;
 
     background:#8f6543;
     position: absolute;
+    left: 50%;
+    bottom: 90px;
+    transform: translateX(-50%);
 
     border-radius:12px;
-
-    position:relative;
-
     box-shadow:
         0 8px 18px rgba(0,0,0,.25);
 }
